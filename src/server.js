@@ -1,9 +1,11 @@
 const porta = 3003;
 
+const Sequelize = require('sequelize');
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const bancoDeDados = require('./bancoDeDados');
+
 
 app.use(bodyParser.urlencoded({ extended: true }))
 
